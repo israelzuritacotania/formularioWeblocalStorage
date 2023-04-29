@@ -1,0 +1,331 @@
+.rojo{
+  background-color: #f44336;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  animation-name: parpadeo;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: inherit;
+}
+
+@keyframes parpadeo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+html, body {
+	margin: 0; 
+	padding: 0;
+  width: 100%;    
+  height: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+  padding: 10px;
+  background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.5);
+
+  padding: 10px;
+  background-image: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+}
+
+#contenido {
+  display: contents;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+  border: 1px solid #999;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  
+  
+}
+
+
+
+#registrar {
+  background-color: #28a745;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+#registrar:hover {
+  background-color: chocolate;
+}
+
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+
+
+body {
+  background-image: url("index.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+
+}
+
+body::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* aquí puedes ajustar la opacidad */
+  z-index: -1;
+  opacity: 0.7; /* aquí puedes ajustar la opacidad */
+}
+
+.pro-name {
+  font-size: 100px;
+  margin: 0;
+  margin-bottom: 15px;  
+  /* font-family: 'Lato', sans-serif; */
+  /* font-family: 'Source Sans Pro', sans-serif; */
+  /* font-family: 'Niconne', cursive; */
+  font-weight: 500;
+  font-family: 'Rouge Script', cursive;
+  line-height: 90px;
+  color: #fff;
+  letter-spacing: 1px;
+  word-spacing: 6px;
+  text-shadow: -2px -2px #000;
+}
+
+.tagline {
+	font-size: 27px;
+	margin-bottom: 60px;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	line-height: 56px;
+	word-spacing: 2px;
+	text-shadow: 2px 2px #1C2725;
+	letter-spacing: 2px;
+	text-transform: capitalize;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0.5rem;
+  cursor: pointer;
+
+  transition: background-color 0.3s;
+}
+
+
+button:hover {
+  background-color: chocolate;
+}
+
+#registro {
+  background-color: #28a745;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+#login {
+  background-color: #007bff;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+#login:hover {
+  background-color: chocolate;
+}
+
+#registro:hover,#cerrarSesion:hover,#acceso:hover {
+  background-color: chocolate;
+}
+
+
+
+
+/* Estilos generales del formulario */
+.register-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #999;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  opacity: 90%;
+ 
+}
+
+
+/* Estilos de los grupos de campos */
+.register-form label {
+  display: block;
+  font-size: 16px;
+  margin-block: 5px;
+  text-align: center;
+}
+
+.register-form input {
+  
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+.register-form input:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+input[type="password"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  max-width: 90%;
+}
+
+/* Estilos personalizados para el campo de entrada de contraseña */
+input[type="password"] {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+input[type="password"]:focus {
+  outline: none;
+  border-color: #00bcd4;
+  box-shadow: 0 0 5px rgba(0, 188, 212, 0.5);
+}
+
+
+/*card para mostrar datos*/
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+  padding: 10px;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: seagreen;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  opacity: 90%;
+}
+
+.card h2 {
+  font-size: 18px;
+  margin: 0 0 10px;
+ 
+}
+
+.card p {
+  font-size: 16px;
+  margin: 0;
+  
+}
+
+.card label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.card span {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #f7f7f7;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#cerrarSesion{
+  background-color: black;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
+#acceso{
+  background-color:#007bff;
+  color: #fff;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s ease;
+}
+
